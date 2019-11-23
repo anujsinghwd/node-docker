@@ -1,0 +1,9 @@
+1.  docker build -t node-docker-start .
+2.  docker ps
+3.  docker run -it -p 9001:3000 -v $(pwd):/app node-docker-start
+4.  docker build -t node-docker-start .
+5.  docker ps
+6.  docker build -t node-docker-start .
+7.  docker run -it -p 9002:3000 -v $(pwd):/app node-docker-start
+8.  docker ps
+9.  docker run -d -p 9000:3000 node-docker-start
